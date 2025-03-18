@@ -22,5 +22,23 @@ function agregarAmigo(){
     
     // Enfocar nuevamente el campo para facilitar añadir más amigos
     inputAmigo.focus();
+
+    // Actualizar la lista visual
+    actualizarListaAmigos();
+}
+
+// Función para actualizar la lista visual de amigos
+function actualizarListaAmigos() {
+    // Obtener el elemento de la lista
+    const listaAmigosElement = document.getElementById('listaAmigos');
     
+    // Limpiar la lista existente
+    listaAmigosElement.innerHTML = '';
+    
+    // Iterar sobre el arreglo de amigos y crear los elementos de la lista
+    amigos.forEach(amigo => {
+        const itemLista = document.createElement('li');
+        itemLista.textContent = amigo;
+        listaAmigosElement.appendChild(itemLista);
+    });
 }
