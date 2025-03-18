@@ -11,7 +11,7 @@ Aplicación web que permite realizar sorteos de "Amigo Secreto" de manera fácil
 
 ## 🛠️ Tecnologías utilizadas
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 
 ## 🚀 Instalación
